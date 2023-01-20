@@ -1,0 +1,54 @@
+.headerMedia, .navigationMedia, .sideContentMedia {
+    display: block;
+}
+
+.container {
+    max-width: 1160px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.headerMedia {
+    height: 143px;
+}
+
+.navigationMedia {
+    height: 265px;
+    width: 283px;
+    float: left;
+}
+
+.sideContentMedia {
+    width: 877px;
+    float:right;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 650px) {
+    .headerMedia {
+       height: auto;
+       width: 100px !important;
+    }
+    .navigationMedia {
+       position: static;
+    }
+    .sideContentMedia {
+       width: auto;
+       float: none;
+       margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 980px) {
+    .container {
+        width: 85%;
+    }
+    .navigationMedia {
+        width: 25%;
+    }
+    .sideContentMedia {
+        width: 75%;
+    }
+}
+

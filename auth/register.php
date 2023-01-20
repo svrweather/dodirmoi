@@ -12,7 +12,7 @@ if (isset($_REQUEST['doGo'])) {
 	$headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
         $headers .= "To: <$email>\r\n";
-        $headers .= "From: <info@aistrobotics.ru>\r\n";
+        $headers .= "From: <rassilkamail123@gmail.com>\r\n";
         // Сообщение для Email
         $message = '
                 <html>
@@ -25,7 +25,7 @@ if (isset($_REQUEST['doGo'])) {
                 </html>
                 ';
      if (mail($email, "Подтвердите Email на сайте", $message, $headers)) {
-            $_SESSION['message'] = 'Подтвердите email на почте(проверьте папку спам)';
+            $_SESSION['message'] = 'Подтвердите email на почте';
         }
        else {
        	$_SESSION['message'] = $error;
