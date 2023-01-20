@@ -25,10 +25,15 @@
 
 
 
+
 @media screen and (min-width: 100px) and (max-width: 650px) {
     .headerMedia {
        height: auto;
        width: 100px !important;
+    }
+    #authTittle {
+    height: 100px;
+    margin-top: 0;
     }
     .navigationMedia {
        position: static;
@@ -60,6 +65,9 @@
     }
     .regMainPartContainer {
         margin-top: 0;
+    }
+    #logoAuthorized, #prof_pic_aut {
+        opacity: 0;
     }
 }
 
