@@ -38,6 +38,17 @@
        float: none;
        margin: 20px 0;
     }
+    .indexHeader {
+        opacity: 0;
+        height: 0;
+    }
+    .form-group {
+        display: flex;
+    }
+    .edit {
+        width: 90%;
+    }
+    
 }
 
 @media screen and (min-width: 651px) and (max-width: 980px) {
@@ -49,6 +60,10 @@
     }
     .sideContentMedia {
         width: 75%;
+    }
+    .indexHeader {
+        opacity: 0;
+        height: 0;
     }
 }
 

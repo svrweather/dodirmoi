@@ -10,6 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media1.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 	<title>Система отслеживания качества</title>
 </head>
@@ -23,17 +24,17 @@
 				<img src="css/logo.png" alt="(((">
 			</div>
 		</header>
-	<div class="indexMainPartContainer"> 
-		<h2 class="entrance">Вход )))</h2>
-		<div class="formGroupContainer">
-			<form action="auth/login.php" method="POST" class="edit">
-			<div class="form-group">
-				<input type="text" placeholder="Email" name="email">
-			</div>
+	    <div class="indexMainPartContainer"> 
+		    <h2 class="entrance">Вход</h2>
+			<div class="formGroupContainer">
+				<form action="auth/login.php" method="POST" class="edit">
+				<div class="form-group">
+					<input type="text" placeholder="Email" name="email">
+				</div>
 			<div class="form-group">
 				<input type="password" placeholder="Пароль" name = "password">
 			</div>
-			<button type="submit">ВОЙТИ</button><br>
+			<button class="edit" type="submit">ВОЙТИ</button><br>
 			<a id="linkToReg" href="reg.php">Нет аккаунта? Зарегистрироваться</a>
 			
 			
