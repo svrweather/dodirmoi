@@ -24,7 +24,7 @@
 			</div>
 		</header>
 	<div class="indexMainPartContainer"> 
-		<h2 class="entrance">Вход</h2>
+		<h2 class="entrance">Вход )))</h2>
 		<div class="formGroupContainer">
 			<form action="auth/login.php" method="POST" class="edit">
 			<div class="form-group">
