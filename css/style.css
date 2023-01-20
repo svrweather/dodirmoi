@@ -38,7 +38,6 @@ input {
 	height: 80px;
 	text-align: left;
 	padding-left: 48px;	
-	padding-right: 48px;	
 }
 
 ::placeholder {
@@ -140,6 +139,7 @@ main {
 	font-size: 24px;
 	line-height: 29px;
 	z-index: 5;
+	width: 283px;
 	font-family: 'Inter', sans-serif;
 	margin-top: 33px;
 	display: flex;
@@ -179,13 +179,14 @@ main {
 
 .child_container {
 	display: flex;
-
 }
 
 .children {
 	margin-top: 50px;
 }
-
+.children a {
+	text-decoration: none;
+}
 #child1 {
 	flex: 1;
 }
@@ -210,26 +211,51 @@ main {
 }
 
 .sideContent {
-	height: 638px;
+	width: 847px;
+	height: 680px;
 	background-color: #ffffff;
 	border-radius: 30px;
 	margin-left: 30px;
 	margin-top: 33px;
 }
-
-.contentArticle {
+.sideContent-text {
+	width: 847px;
+	height: 1500px;
+	background-color: #ffffff;
+	border-radius: 30px;
+	margin-left: 30px;
+	margin-top: 33px;
+}
+.sideContent-about {
+	width: 847px;
+	height: 1300px;
+	background-color: #ffffff;
+	border-radius: 30px;
+	margin-left: 30px;
+	margin-top: 33px;
+}
+.bold {
+	font-weight: 600;
+}
+#howItWorks {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 160%;
+	color: black;
+	margin: 32px 32px 32px ;
+}
+
+#howItWorksH1 {
+	font-family: 'Inter';
+	font-style: normal;
 	color: #520FAD;
-	padding: 32px 32px 32px 32px;
-	margin: 0 0 0 0;
+	margin: 32px 32px 32px ;
 }
 
 .video {
-	margin: 0 auto 20px;
+	margin: 50px auto 20px;
 	display: block;
 	border-radius: 30px;
 }
@@ -305,20 +331,45 @@ main {
 .newsGrid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 16rem;
+/*    grid-auto-rows: 16rem;*/
     grid-gap: 1rem;
-	margin-top: 33px;
-	margin-left: 32px;
+/*	margin-top: 33px;
+	margin-left: 62px;*/
 	
 }
 
+.peopleGrid {
+	font-family: 'Arial';
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+/*    grid-auto-rows: 16rem;*/
+    grid-gap: 1rem;
+}
+.peopleGrid p, h1{
+	font-family: 'Arial';
+	text-align: center;
+}
+.top-content {
+	max-width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
 article {
-	max-width: 411px;
-	max-height: 265px;
+	max-width: 391px;
+	max-height: 300px;
 	border-radius: 30px;
 	background: #FFFFFF;
 }
-
+article h1, p{ 
+	margin: 0;
+	padding-top: 0.2em;
+	padding-left: 0.2em;
+}
+article a {
+	text-decoration: none;
+}
 .artContainer {
 	padding: 1rem;
+	margin-bottom: 2rem;
 }
