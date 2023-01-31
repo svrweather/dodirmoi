@@ -25,10 +25,15 @@
 
 
 
+
 @media screen and (min-width: 100px) and (max-width: 650px) {
     .headerMedia {
        height: auto;
        width: 100px !important;
+    }
+    #authTittle {
+    height: 100px;
+    margin-top: 0;
     }
     .navigationMedia {
        position: static;
@@ -41,15 +46,31 @@
     .indexHeader {
         opacity: 0;
         height: 0;
+        margin: 0 0 0 0;
     }
     .form-group {
         display: flex;
     }
     .edit {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     button {
         width: 100%;
+        font-size: 16px;
+    }
+    #regEntrance {
+        font-size: 35px;
+    }
+    .regMainPartContainer {
+        margin-top: 0;
+    }
+    #logoAuthorized, #prof_pic_aut {
+        opacity: 0;
+    }
+    .choice {
+        font-size: 33px;
     }
 }
 
