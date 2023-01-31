@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
  	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media1.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,14 +29,14 @@
  </head>
  <body>
   <div class="container">
-    <header>
+    <header id="authTittle">
       <div>
         <h1 class="content-header_title">мойдодыр</h1>
       </div>
-      <div class="logo">
+      <div class="logo" id="logoAuthorized">
         <img src="css/logo.png" alt="(((">
       </div>
-      <div class="profile_pic">
+      <div class="profile_pic" id="prof_pic_aut">
         <img src="css/images.jpeg" alt=")))">
       </div>
     </header>
@@ -50,15 +51,7 @@
               </p>
             </a>
         </div>
-       <!--  <div class="children" id="child2">
-          <a href="myStatistic.php">
-            <img src="css/child2.jpg" alt="children">
-            <p class="children_name">
-                Рахмат <br> Дамируллин
-            </p>
-          </a>
-        </div>      
-      </div> -->
+       
       
     </main>
 
