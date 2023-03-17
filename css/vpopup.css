@@ -33,14 +33,7 @@
   }
 }
 */
-.menu {
-    opacity: 0; 
-}
-@media (max-width: 650px) {
-    body {
-        background-color: red; 
-    }
-}
+
 /* Стили для блока с контентом окна */ 
 .modal-content {
     position: relative;

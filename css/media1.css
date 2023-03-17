@@ -27,8 +27,8 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 650px) {
-    body{
-        background-color: red;
+    .menu {
+        opacity: 1;
     }
     .headerMedia {
        height: auto;
@@ -89,3 +89,8 @@
     }
 }
 
+@media screen and (min-width: 700){
+    .menu {
+        opacity: 0;
+    }
+}

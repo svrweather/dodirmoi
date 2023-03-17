@@ -50,7 +50,7 @@
     </header>
       <div class="mainPartContainer">
         <div class="navigation">
-          <!-- <div id="openModal" class="modal">
+          <div id="openModal" class="modal">
             <div class="modal-dialog">
               <div class="modal-content">
                <div class="modal-header">
@@ -67,12 +67,12 @@
       </div>
     </div>
   </div>
-<!-- </div>
+</div>
  
 <!-- HTML кнопки -->
- <!-- <div class='menu'>
+<div class='menu'>
   <a href="#openModal">Открыть модальное окно</a>
- </div> -->
+ </div>
 
 
           <ul class="nav">
