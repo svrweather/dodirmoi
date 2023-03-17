@@ -11,8 +11,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/media1.css">
  	<link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/diagrams.css">
+  <link rel="stylesheet" href="css/diagrams.css">
+  <link rel="stylesheet" href="css/vpopup.css">
+  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--     <link rel="stylesheet" href="css/jquery.circliful.css">-->
@@ -39,7 +42,7 @@
         <img src="css/logo.png" alt="(((">
       </div>
       <div class="userName">
-        Никита Сентяков
+        Никитa Сентяков
       </div>
       <div class="profile_pic">
         <img src="css/user.jpg" alt=")))">
@@ -47,6 +50,31 @@
     </header>
       <div class="mainPartContainer">
         <div class="navigation">
+          <!-- <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-header">
+        <h3 class="modal-title">Заголовок</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <ul>
+			<li>Содержание</li>
+			<li>Содержание</li>
+			<li>Содержание</li>
+			<li>Содержание</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+<!-- </div>
+ 
+<!-- HTML кнопки -->
+ <!-- <div class='menu'>
+  <a href="#openModal">Открыть модальное окно</a>
+ </div> -->
+
+
           <ul class="nav">
               <li><a href="/authorized.php">Мой профиль</a></li>
               <li><a href="/howItWorks.php">Как это работает?</a></li>
