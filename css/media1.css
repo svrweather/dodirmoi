@@ -27,6 +27,9 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 650px) {
+    body{
+        background-color: red;
+    }
     .headerMedia {
        height: auto;
        width: 100px !important;
