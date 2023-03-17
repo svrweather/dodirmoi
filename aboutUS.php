@@ -69,31 +69,17 @@
 	              <h1>Никита Сентяков</h1>
 	              <p>Генеральный директор, Team Leader</p>
 	            </div></article>
-	          <article><div class="artContainer">
-	              <img src="css/anna.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
-	              <h1>Анна Рябчикова</h1>
-	              <p>Финансовый директор, директор по маркетингу</p>
-	            </div></article>
 	            <article><div class="artContainer">
 	              <img src="css/damir.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
 	              <h1>Дамир Рахматуллин</h1>
 	              <p>Web-Разработчик</p>
 	            </div></article>
 	            <article><div class="artContainer">
-	              <img src="css/bogdan.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
-	              <h1>Богдан Урсегов</h1>
-	              <p>Backend-разработчик</p>
-	            </div></article>
-	            <article><div class="artContainer">
 	              <img src="css/roma.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
 	              <h1>Роман Лашкарев</h1>
 	              <p>Web-Разработчик</p>
 	            </div></article>
-	            <article><div class="artContainer">
-	              <img src="css/andrei.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
-	              <h1>Андрей Крюков</h1>
-	              <p>Data Scientis</p>
-	            </div></article>
+
 	        </div>
 	    </div>
     </div>
