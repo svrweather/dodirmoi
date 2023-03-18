@@ -27,8 +27,58 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 650px) {
+    .content-header_title {
+        font-size: 20px !important;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: 31px;
+        padding-top: 15px;
+
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .container {
+        position: fixed;
+        width: 100% !important;
+        height: 100%;
+    }
+    .navigation {
+        width: 0px !important;
+        opacity: 0;
+        
+        display: none;
+    }
+    header {
+        position: absolute !important;
+        width: 100% !important;
+        height: 80px !important;
+        margin-top: 0px !important;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px !important;
+        margin-bottom: 24px !important;
+        position: relative !important;
+    }
+    .profile_pic {
+        opacity: 0;
+    }
+    .sideContent{
+        margin-top: 24px !important;
+        position: relative !important;
+    }
+    .userName {
+        opacity: 0;
+    }
     .menu {
         opacity: 1;
+    }
+    .sideContent {
+        width: 100% !important;
+        margin: 0 0 0 0 !important;
     }
     .headerMedia {
        height: auto;
@@ -42,7 +92,6 @@
        position: static;
     }
     .sideContentMedia {
-       width: auto;
        float: none;
        margin: 20px 0;
     }
@@ -89,7 +138,7 @@
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 651px){
     .menu {
         opacity: 0;
     }

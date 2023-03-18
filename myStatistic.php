@@ -33,22 +33,31 @@
  	
  	<title>Document</title>
  </head>
-<!--  <style>
- 	@media only screen and (max-width: 650px) {
-	    .menu {
-	        opacity: 1;
-	    }
-	}
-	@media only screen and (min-width: 700px){
-	    .menu {
-	        opacity: 0;
-	    }
-	}
- </style> -->
  <body>
   <div class="container">
     <header>
+      <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Заголовок</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">    
+                <ul>
+			            <li>Содержание</li>
+			            <li>Содержание</li>
+			            <li>Содержание</li>
+			            <li>Содержание</li>
+		            </ul>
+                </div>
+              </div>
+            </div>
+          </div>
       <div>
+      <div class='menu'>
+        <a href="#openModal">Открыть модальное окно</a>
+      </div>
         <h1 class="content-header_title">мойдодыр</h1>
       </div>
       <div class="logo">
@@ -63,29 +72,10 @@
     </header>
       <div class="mainPartContainer">
         <div class="navigation">
-          <div id="openModal" class="modal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-               <div class="modal-header">
-        <h3 class="modal-title">Заголовок</h3>
-        <a href="#close" title="Close" class="close">×</a>
-      </div>
-      <div class="modal-body">    
-        <ul>
-			<li>Содержание</li>
-			<li>Содержание</li>
-			<li>Содержание</li>
-			<li>Содержание</li>
-		</ul>
-      </div>
-    </div>
-  </div>
-</div>
+          
  
 <!-- HTML кнопки -->
-<div class='menu'>
-  <a href="#openModal">Открыть модальное окно</a>
- </div>
+
 
 
           <ul class="nav">
