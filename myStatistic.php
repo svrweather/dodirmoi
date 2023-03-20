@@ -30,6 +30,7 @@
   referrerpolicy="no-referrer"
   />  
   <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script src="js/arrow.js" type = "text/javascript"></script>
  	
  	<title>Document</title>
  </head>
@@ -56,12 +57,17 @@
           </div>
       <div>
       <div class='menu'>
-        <a href="#openModal">Открыть модальное окно</a>
+        <div class='lines'>
+          <a href="#openModal"><span id='span1'></span></a>
+          <a href="#openModal"><span id='span2'></span></a>
+          <a href="#openModal"><span id='span3'></span></a>
+        </div>
+       
       </div>
         <h1 class="content-header_title">мойдодыр</h1>
       </div>
       <div class="logo">
-        <img src="css/logo.png" alt="(((">
+        <img src="css/logo.png" alt="(((" id='logoPict'>
       </div>
       <div class="userName">
         Никитa Сентяков
@@ -88,36 +94,39 @@
           </ul>
         </div>
       <div class="sideContent">
-          <p class="upperText"><span>Никита</span> сегодня вымыл руки на <span>80</span>%</p>
+          <p class="upperText"><span>Никита</span> сегодня вымыл руки на <span>80%</span></p>
           <div class="diagramContent">
-              <div class="firstDiagram">
+              <div class="firstDiagram" id='diagram1'>
                   <p>За сегодня</p>
                   <div id="circle"></div>
               </div>
-              <div class="secondDiagram">
+              <div class="secondDiagram" id='diagram2'>
                   <p>За неделю</p>
                   <div id="circle2"></div>
               </div>
+               <input type="button" id='btn' value='>'>
+                <!-- <p id='arrow'>></p> -->
+              </input>
           </div>
           <div class="barContent">
               <div class="chart">
                   <div class="container_bar">
-                      <div class="pipe">
+                      <div class="pipe" id='pipe1'>
                           <div style="width: 60%"></div>
                       </div>
-                      <p>Класс</p>
+                      <p id='p1'>Класс</p>
                   </div>
                  <div class="container_bar">
-                     <div class="pipe">
+                     <div class="pipe" id='pipe2'>
                          <div style="width: 38%"></div>
                      </div>
-                     <p>Параллель</p>
+                     <p id='p2'>Параллель</p>
                  </div>
                   <div class="container_bar">
-                      <div class="pipe">
+                      <div class="pipe" id='pipe3'>
                           <div style="width: 18%"></div>
                       </div>
-                      <p>Школа</p>
+                      <p id='p3'>Школа</p>
                   </div>
               </div>
           </div>
