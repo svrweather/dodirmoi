@@ -10,6 +10,7 @@ require_once '../functions/connect.php'
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="../css/diagrams.css">
+     <link rel="stylesheet" href="../css/admin.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--     <link rel="stylesheet" href="css/jquery.circliful.css">-->
@@ -44,6 +45,24 @@ require_once '../functions/connect.php'
             <img src="../css/admin-logo.jpg" alt=")))">
           </div>
         </header>
+        <div class="selector">
+          <form action="" method="GET">
+            <select name='class'>
+              <option value="11">11 класс</option>
+              <option value="10">10 класс</option>
+              <option value="9">9 класс</option>
+              <option value="8">8 класс</option>
+              <option value="7">7 класс</option>
+              <option value="6">6 класс</option>
+              <option value="5">5 класс</option>
+              <option value="4">4 класс</option>
+              <option value="3">3 класс</option>
+              <option value="2">2 класс</option>
+              <option value="1">1 класс</option>
+            </select>
+            <button type="submit" class="admin_input">Отправить</button>
+          </form>
+        </div>
         <table class="table">
             <tbody>
             <tr>
@@ -54,8 +73,35 @@ require_once '../functions/connect.php'
                 <th>wash_time</th>
             </tr>
             <?php
-            $result = mysqli_query($connect, 'SELECT * FROM `main`');
-
+            var_dump($_GET['class']);
+            switch ($_GET['class']) {
+              case '11':
+                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                break;
+              case '10':
+                echo "ya eblan";
+              case '9':
+                echo "ya eblan"; 
+              case '8':
+                echo "ya eblan";
+              case '7':
+                echo "ya eblan";
+              case '6':
+                echo "ya eblan";
+              case '5':
+                echo "ya eblan";
+              case '4':
+                echo "ya eblan";
+              case '3':
+                echo "ya eblan";
+              case '2':
+                echo "ya eblan";
+              case '1':
+                echo "ya eblan";             
+              default:
+                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                break;
+            }
             while ($row = mysqli_fetch_array($result)) { // выводим данные
                 echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["id_pupil"] . "
                  </td>" . "\n" . "<td>" . "" . $row["data_time"] . "</td>" . "\n" . "<td>" . "" . $row

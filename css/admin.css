@@ -3,7 +3,6 @@
     margin-bottom: 20px;
     border: 1px solid #dddddd;
     border-collapse: collapse;
-    margin-top: 5%;
 }
 .table th {
     font-weight: bold;
@@ -18,4 +17,23 @@
 .admin {
     background: #FFAB00;
 
+}
+.selector input {
+     border-radius: 10px; 
+     border: 1px solid #D9D9D9; 
+     margin: 0;
+     padding: 0;
+     width: 100px;
+     height: 20px;
+     text-align: center;
+}
+.admin_input {
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 0;
 }
