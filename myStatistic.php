@@ -41,15 +41,17 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h3 class="modal-title">Заголовок</h3>
+                  <h3 class="modal-title">Выберите страницу</h3>
                   <a href="#close" title="Close" class="close">×</a>
                 </div>
                 <div class="modal-body">    
                 <ul>
-			            <li>Содержание</li>
-			            <li>Содержание</li>
-			            <li>Содержание</li>
-			            <li>Содержание</li>
+			            <li><a href="/authorized.php">Мой профиль</a></li>
+              <li><a href="/howItWorks.php">Как это работает?</a></li>
+              <li><a href="/aboutUS.php">О нас</a></li>
+              <li class="bold"><a href="/myStatistic.php">Статистика</a></li>
+              <li><a href="/news.php">Новости</a></li>
+              <li><a href="/admin/admin.php">Админ-панель</a></li>
 		            </ul>
                 </div>
               </div>
@@ -165,6 +167,24 @@
           ]
       });
   </script>
+  <script>
+//дожидаемся полной загрузки страницы
+window.onload = function () {
+	var arrow = document.getElementById("btn");
+	var firstDiagram = document.getElementById("diagram1");
+	var secondDiagram = document.getElementById("diagram2");
+    //вешаем на него событи
+    arrow.onclick = function() {
+        firstDiagram.style.display = 'none';
+    	secondDiagram.style.display = 'block';
+    	secondDiagram.style.paddingLeft = '96px';
+    	secondDiagram.style.marginTop = '10px';
+        return false;
+    }
+}
+</script>
+
+<a id="switch" href="#">On</a>
  </body>
  <footer>
    

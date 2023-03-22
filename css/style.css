@@ -160,14 +160,12 @@ main {
 	border-radius: 50px;
 	height: 90px;
 	width: 90px;
-	filter: grayscale(1);
 }
 
 .children img {
 	height: 250px;
 	width: 250px;
 	border-radius: 140px;
-	filter: grayscale(1);
 }
 
 .profile_pic {
@@ -372,4 +370,10 @@ article a {
 .artContainer {
 	padding: 1rem;
 	margin-bottom: 2rem;
+}
+.modal-body li{
+	text-decoration: none;
+	list-style: none;
+	color: #666;
+	font-size: 24px;
 }

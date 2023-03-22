@@ -92,7 +92,7 @@
         border: 0;
         height: 80px;
         color: #520FAD;
-        background-color: white;
+        background-color: none;
         margin-top: 35%;
         font-size: 50px;
         margin-right: 5%;
@@ -114,7 +114,8 @@
     .content-header_title {
         font-size: 20px !important;
         position: absolute;
-        right: 86px;
+        right: 23%;
+        left: 20%;
         top: 10px;
     }
     .logo {
