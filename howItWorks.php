@@ -45,7 +45,7 @@
     <div class="mainPartContainer">
         <div class="navigation">
             <ul class="nav">
-                <li><a href="/authorized.php">Мой профиль</a></li>
+                <li><a href="/myProfile.php">Мой профиль</a></li>
                 <li class="bold"><a href="/howItWorks.php">Как это работает?</a></li>
                 <li><a onclick="onClickMenu()" href="/aboutUS.php">О нас</a></li>
                 <li><a href="/myStatistic.php">Статистика</a></li>
