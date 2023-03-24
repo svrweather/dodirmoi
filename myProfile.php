@@ -85,10 +85,10 @@
 
 
           <ul class="nav">
-              <li><a href="/myProfile.php">Мой профиль</a></li>
+              <li class="bold"><a href="/myProfile.php">Мой профиль</a></li>
               <li><a href="/howItWorks.php">Как это работает?</a></li>
               <li><a href="/aboutUS.php">О нас</a></li>
-              <li class="bold"><a href="/myStatistic.php">Статистика</a></li>
+              <li><a href="/myStatistic.php">Статистика</a></li>
               <li><a href="/news.php">Новости</a></li>
               <li><a href="/admin/admin.php">Админ-панель</a></li>
           </ul>
@@ -96,9 +96,10 @@
       <div class="sideContent">
         <div class="profileContainer">
         	<div class="leftSideContainer">
-        		<img src="" alt="">
-        		<button id='profBtn'></button>
+        		<img src="css/roma.jpg" alt="roma" id='profPhoto'>
+        		<button id='profBtn'>ИЗМЕНИТЬ ФОТО</button>
         	</div>
+
         	<div class="rightSideContainer">
         		<form action="functions/editProfile.php" method="POST" class="edit">
       				<div class="form-group">
@@ -113,7 +114,7 @@
       				<div class="form-group">
       					<input type="password" name="confirmPassword" placeholder="Повторите пароль" class='profileInput'>
       				</div>
-      				<button type="submit" class="btn btn-primary" name="doGo" id='profile5'>СОХРАНИТЬ!!! ИЗМЕНЕНИЯ</button>
+      				<button type="submit" class="btn btn-primary" name="doGo" id='SaveChanges'>СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
 				      <p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
 			     </form>
         	</div>

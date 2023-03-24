@@ -46,6 +46,7 @@ require_once '../functions/connect.php'
             <img src="../css/admin-logo.jpg" alt=")))">
           </div>
         </header>
+<<<<<<< HEAD
         <div class="mainPartContainer">
           <div class="navigation" id="admin_navigation">
           
@@ -128,6 +129,79 @@ require_once '../functions/connect.php'
                        </td>" . "\n" . "<td>" . "" . $row["class"] . "</td>" . "\n" . "<td>" . "" . $row
                           ["datetime"] . "</td>" . "\n" . "<td>" . "" . $row["coefficent"] . "</td>" . "\n" . "<td>" . "" . $row["timego"] . "</td>" . "\n" . "</tr>" . "\n";
                   }
+=======
+        <div class="selector">
+          <form action="" method="GET">
+            <select name='class'>
+              <option value="11">11 класс</option>
+              <option value="10">10 класс</option>
+              <option value="9">9 класс</option>
+              <option value="8">8 класс</option>
+              <option value="7">7 класс</option>
+              <option value="6">6 класс</option>
+              <option value="5">5 класс</option>
+              <option value="4">4 класс</option>
+              <option value="3">3 класс</option>
+              <option value="2">2 класс</option>
+              <option value="1">1 класс</option>
+            </select>
+            <button type="submit" class="admin_input" style="padding-left: 10px; padding-right: 10px;">отфильтровать</button>
+          </form>
+        </div>
+        <table class="table">
+            <tbody>
+            <tr>
+                <th>id12121</th>
+                <th>id_pupil</th>
+                <th>data_time</th>
+                <th>percent</th>
+                <th>wash_time</th>
+            </tr>
+            <?php
+            var_dump($_GET['class']);
+            switch ($_GET['class']) {
+              case '11':
+                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                break;
+              case '10':
+                echo "ya eblan";
+                break;
+              case '9':
+                echo "ya eblan";
+                break; 
+              case '8':
+                echo "ya eblan";
+                break;
+              case '7':
+                echo "ya eblan";
+                break;
+              case '6':
+                echo "ya eblan";
+                break;
+              case '5':
+                echo "ya eblan";
+                break;
+              case '4':
+                echo "ya eblan";
+                break;
+              case '3':
+                echo "ya eblan";
+                break;
+              case '2':
+                echo "ya eblan";
+                break;
+              case '1':
+                echo "ya eblan";
+                break;             
+              default:
+                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                break;
+            }
+            while ($row = mysqli_fetch_array($result)) { // выводим данные
+                echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["id_pupil"] . "
+                 </td>" . "\n" . "<td>" . "" . $row["data_time"] . "</td>" . "\n" . "<td>" . "" . $row
+                    ["percent"] . "</td>" . "\n" . "<td>" . "" . $row["wash_time"] . "</td>" . "\n" . "</tr>" . "\n";
+>>>>>>> de45aea26831dac7b84a72ee8fc121d525daff3b
 
                   ?>
                   </tbody>

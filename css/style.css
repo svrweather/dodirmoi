@@ -15,6 +15,7 @@ h2, .edit {
 
 .profileInput {
 	border-radius: 20px;
+	width: 90%;
 }
 
 button {
@@ -386,10 +387,14 @@ article a {
 	display: flex;
 }
 .leftSideContainer {
-	padding-left: 96px;
-	flex: 1;
+	left: 10px;
+	max-width: 30%;
+	position: relative;
+	padding-top: 30px;
+
 }
 .rightSideContainer {
+<<<<<<< HEAD
 	flex: 1;
 }
 #admin_nav {
@@ -400,4 +405,22 @@ article a {
 }
 #admin_navigation {
 	height: 150px;
+=======
+	right: 10px;
+	max-width: 65%;
+	position: relative;
+	padding-top: 30px;
+}
+#profBtn {
+	max-width: 90%;
+	all: unset;
+	color: #520FAD;
+	margin-left: 14%;
+	margin-top: 20px;
+}
+#profPhoto {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+>>>>>>> de45aea26831dac7b84a72ee8fc121d525daff3b
 }
