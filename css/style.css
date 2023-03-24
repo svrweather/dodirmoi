@@ -426,7 +426,6 @@ article a {
 	height: 200px;
 	border-radius: 100px;
 }
-<<<<<<< HEAD
 
 .request img {
 	width: 215px;
@@ -444,8 +443,8 @@ article a {
 	margin-top: 10px;
 }
 .description {
-	margin-top: 50px;	
-=======
+	margin-top: 50px;
+}	
 #btnSaveChanges {
 	max-width: 100%;
 	border-radius: 20px;
@@ -490,5 +489,4 @@ article a {
 	font-size: 18px;
 	line-height: 140%;
 	color: #520FAD;
->>>>>>> cc6da081e376e337cdf5149bb9d0d5ff30127a43
 }
