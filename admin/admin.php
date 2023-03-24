@@ -90,7 +90,7 @@ require_once '../functions/connect.php'
                       $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%11%"');
                       break;
                     case '10':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%" AND class LIKE "_0%"');
                       break;
                     case '9':
                       $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%9%"');
@@ -117,7 +117,7 @@ require_once '../functions/connect.php'
                       $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%2%"');
                       break;
                     case '1':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%1%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%1%" AND NOT class LIKE "_0%"');
                       break;             
                     default:
                       $result = mysqli_query($connect, 'SELECT * FROM `school`');
