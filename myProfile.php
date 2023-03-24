@@ -113,7 +113,7 @@
       				<div class="form-group">
       					<input type="password" name="confirmPassword" placeholder="Повторите пароль" class='profileInput'>
       				</div>
-      				<button type="submit" class="btn btn-primary" name="doGo" id='profile5'>СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+      				<button type="submit" class="btn btn-primary" name="doGo" id='profile5'>СОХРАНИТЬ!!! ИЗМЕНЕНИЯ</button>
 				      <p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
 			     </form>
         	</div>
