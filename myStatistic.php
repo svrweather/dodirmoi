@@ -103,7 +103,7 @@
                   <div id="circle"></div>
               </div>
               <div class="secondDiagram" id='diagram2'>
-                  <p>За неделю</p>
+                  <p id='secondp'>За неделю</p>
                   <div id="circle2"></div>
               </div>
                <input type="button" id='btn' value='>'>
@@ -173,18 +173,30 @@ window.onload = function () {
 	var arrow = document.getElementById("btn");
 	var firstDiagram = document.getElementById("diagram1");
 	var secondDiagram = document.getElementById("diagram2");
+  var p = document.getElementById("secondp");
     //вешаем на него событи
+  var cnt = 1;
+    p.style.display = 'block';
     arrow.onclick = function() {
+      
+      if (cnt % 2 != 0){
         firstDiagram.style.display = 'none';
-    	secondDiagram.style.display = 'block';
-    	secondDiagram.style.paddingLeft = '96px';
-    	secondDiagram.style.marginTop = '10px';
-        return false;
+        secondDiagram.style.display = 'block';
+        secondDiagram.style.paddingLeft = '96px';
+        
+      }
+      else{
+        firstDiagram.style.display = 'block';
+        secondDiagram.style.display = 'none';
+        
+      }
+      cnt = cnt + 1;
+      return false;
     }
-}
+  }
 </script>
 
-<a id="switch" href="#">On</a>
+
  </body>
  <footer>
    
