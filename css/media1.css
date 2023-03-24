@@ -84,7 +84,7 @@
         left: 0;
         width: 90%;
     }
-    input {
+    #btn-arrow input {
         width: 40px !important;
     }
     #btn {

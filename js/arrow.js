@@ -1,4 +1,4 @@
-var arrow = document.getElementById("btn");
+var arrow = document.getElementById("btn-arrow");
 var firstDiagram = document.getElementById("diagram1");
 var secondDiagram = document.getElementById("diagram2");
 
