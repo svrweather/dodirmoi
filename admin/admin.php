@@ -67,7 +67,7 @@ require_once '../functions/connect.php'
         <table class="table">
             <tbody>
             <tr>
-                <th>id</th>
+                <th>id12121</th>
                 <th>id_pupil</th>
                 <th>data_time</th>
                 <th>percent</th>
