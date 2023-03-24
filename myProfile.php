@@ -101,22 +101,21 @@
         	</div>
         	<div class="rightSideContainer">
         		<form action="functions/editProfile.php" method="POST" class="edit">
-				<div class="form-group">
-					<input type="text" name="login" placeholder="ФИО">
-				</div>
-				<div class="form-group">
-					<input type="email" name="email" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<input type="password" name="password" placeholder="Пароль">
-				</div>
-				<div class="form-group">
-					<input type="password" name="confirmPassword" placeholder="Повторите пароль">
-				</div>
-				
-				<button type="submit" class="btn btn-primary" name="doGo">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
-				<p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
-			</form>
+      				<div class="form-group">
+      					<input type="text" name="login" placeholder="ФИО">
+      				</div>
+      				<div class="form-group">
+      					<input type="email" name="email" placeholder="Email">
+      				</div>
+      				<div class="form-group">
+      					<input type="password" name="password" placeholder="Пароль">
+      				</div>
+      				<div class="form-group">
+      					<input type="password" name="confirmPassword" placeholder="Повторите пароль">
+      				</div>
+      				<button type="submit" class="btn btn-primary" name="doGo">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+				      <p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
+			     </form>
         	</div>
         </div>
         <div class="childrenContainer">

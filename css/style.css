@@ -377,3 +377,14 @@ article a {
 	color: #666;
 	font-size: 24px;
 }
+
+.profileContainer {
+	display: flex;
+}
+.leftSideContainer {
+	padding-left: 96px;
+	flex: 1;
+}
+.rightSideContainer {
+	flex: 1;
+}
