@@ -84,7 +84,7 @@
         left: 0;
         width: 90%;
     }
-    input {
+    #btn-arrow input {
         width: 40px !important;
     }
     #btn {
@@ -96,7 +96,6 @@
         margin-top: 35%;
         font-size: 50px;
         margin-right: 5%;
-        width: 30px;
     }
     .upperText {
         font-size: 20px !important;

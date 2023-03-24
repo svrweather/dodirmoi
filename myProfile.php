@@ -16,10 +16,8 @@
  	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/diagrams.css">
   <link rel="stylesheet" href="css/vpopup.css">
-  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--     <link rel="stylesheet" href="css/jquery.circliful.css">-->
      <link href="css/main.css" rel="stylesheet" type="text/css" />
 
   <link 
@@ -96,95 +94,42 @@
           </ul>
         </div>
       <div class="sideContent">
-          <p class="upperText"><span>Никита</span> сегодня вымыл руки на <span>80%</span></p>
-          <div class="diagramContent">
-              <div class="firstDiagram" id='diagram1'>
-                  <p>За сегодня</p>
-                  <div id="circle"></div>
-              </div>
-              <div class="secondDiagram" id='diagram2'>
-                  <p>За неделю</p>
-                  <div id="circle2"></div>
-              </div>
-               <input type="button" id='btn' value='>'>
-                <!-- <p id='arrow'>></p> -->
-              </input>
-          </div>
-          <div class="barContent">
-              <div class="chart">
-                  <div class="container_bar">
-                      <div class="pipe" id='pipe1'>
-                          <div style="width: 60%"></div>
-                      </div>
-                      <p id='p1'>Класс</p>
-                  </div>
-                 <div class="container_bar">
-                     <div class="pipe" id='pipe2'>
-                         <div style="width: 38%"></div>
-                     </div>
-                     <p id='p2'>Параллель</p>
-                 </div>
-                  <div class="container_bar">
-                      <div class="pipe" id='pipe3'>
-                          <div style="width: 18%"></div>
-                      </div>
-                      <p id='p3'>Школа</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/circliful.js"></script>
-  <script>
-      circliful.newCircle({
-          percent: 80,
-          id: 'circle',
-          type: 'simple',
-          strokeLinecap: "round",
-          noPercentageSign: false,
-          backgroundCircleWidth: 20,
-          foregroundCircleWidth: 20,
-          progressColors: [
-              {percent: 1, color: '#EF0000'},
-              {percent: 30, color: 'orange'},
-              {percent: 60, color: '#A2EF00'}
-          ]
-      });
-      circliful.newCircle({
-          percent: 20,
-          id: 'circle2',
-          type: 'simple',
-          strokeLinecap: "round",
-          noPercentageSign: false,
-          backgroundCircleWidth: 20,
-          foregroundCircleWidth: 20,
-          progressColors: [
-              {percent: 1, color: '#EF0000'},
-              {percent: 30, color: 'orange'},
-              {percent: 60, color: '#A2EF00'}
-          ]
-      });
-  </script>
-  <script>
-//дожидаемся полной загрузки страницы
-window.onload = function () {
-	var arrow = document.getElementById("btn");
-	var firstDiagram = document.getElementById("diagram1");
-	var secondDiagram = document.getElementById("diagram2");
-    //вешаем на него событи
-    arrow.onclick = function() {
-        firstDiagram.style.display = 'none';
-    	secondDiagram.style.display = 'block';
-    	secondDiagram.style.paddingLeft = '96px';
-    	secondDiagram.style.marginTop = '10px';
-        return false;
-    }
-}
-</script>
-
-<a id="switch" href="#">On</a>
+        <div class="profileContainer">
+        	<div class="leftSideContainer">
+        		<img src="" alt="">
+        		<button></button>
+        	</div>
+        	<div class="rightSideContainer">
+        		<form action="functions/editProfile.php" method="POST" class="edit">
+				<div class="form-group">
+					<input type="text" name="login" placeholder="ФИО">
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<input type="password" name="password" placeholder="Пароль">
+				</div>
+				<div class="form-group">
+					<input type="password" name="confirmPassword" placeholder="Повторите пароль">
+				</div>
+				
+				<button type="submit" class="btn btn-primary" name="doGo">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+				<p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
+			</form>
+        	</div>
+        </div>
+        <div class="childrenContainer">
+        	<p>ДЕТИ</p>
+        	<img src="" alt="">
+        	<div class="allInformation">
+       			<p></p> 		
+        	</div>
+        	<button>
+        		
+        	</button>
+        </div>
+      </div> 
  </body>
  <footer>
    

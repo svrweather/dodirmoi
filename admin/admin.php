@@ -60,7 +60,7 @@ require_once '../functions/connect.php'
               <option value="2">2 класс</option>
               <option value="1">1 класс</option>
             </select>
-            <button type="submit" class="admin_input">Отправить</button>
+            <button type="submit" class="admin_input" style="padding-left: 10px; padding-right: 10px;">отфильтровать</button>
           </form>
         </div>
         <table class="table">
@@ -80,24 +80,34 @@ require_once '../functions/connect.php'
                 break;
               case '10':
                 echo "ya eblan";
+                break;
               case '9':
-                echo "ya eblan"; 
+                echo "ya eblan";
+                break; 
               case '8':
                 echo "ya eblan";
+                break;
               case '7':
                 echo "ya eblan";
+                break;
               case '6':
                 echo "ya eblan";
+                break;
               case '5':
                 echo "ya eblan";
+                break;
               case '4':
                 echo "ya eblan";
+                break;
               case '3':
                 echo "ya eblan";
+                break;
               case '2':
                 echo "ya eblan";
+                break;
               case '1':
-                echo "ya eblan";             
+                echo "ya eblan";
+                break;             
               default:
                 $result = mysqli_query($connect, 'SELECT * FROM `main`');
                 break;
