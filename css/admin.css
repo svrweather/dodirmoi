@@ -51,7 +51,6 @@
 }
 
 .selector::before {
-  content: "\f13a";
   font-family: FontAwesome;
   position: absolute;
   top: 0;

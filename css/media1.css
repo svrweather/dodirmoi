@@ -160,6 +160,7 @@
     }
     .profile_pic {
         opacity: 0;
+        display: none;
     }
     .sideContent{
         margin-top: 24px !important;
