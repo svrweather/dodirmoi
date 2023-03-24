@@ -394,8 +394,10 @@ article a {
 
 }
 .rightSideContainer {
-<<<<<<< HEAD
-	flex: 1;
+	right: 10px;
+	max-width: 65%;
+	position: relative;
+	padding-top: 30px;
 }
 #admin_nav {
 	justify-content: unset;
@@ -405,11 +407,6 @@ article a {
 }
 #admin_navigation {
 	height: 150px;
-=======
-	right: 10px;
-	max-width: 65%;
-	position: relative;
-	padding-top: 30px;
 }
 #profBtn {
 	max-width: 90%;
@@ -422,5 +419,4 @@ article a {
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
->>>>>>> de45aea26831dac7b84a72ee8fc121d525daff3b
 }
