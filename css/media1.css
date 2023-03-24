@@ -27,6 +27,12 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 650px) {
+    body {
+        overflow: scroll;
+      }
+    .diagramContent p {
+        font-size: 32px !important;
+    }
     .lines{
         margin-top: 13px;
         display: block;
@@ -94,7 +100,7 @@
         height: 80px;
         color: #520FAD;
         background-color: none;
-        margin-top: 35%;
+        margin-top: 34%;
         font-size: 50px;
         margin-right: 5%;
     }
@@ -132,7 +138,6 @@
         margin: 0;
     }
     .container {
-        position: fixed;
         width: 100% !important;
         height: 100%;
     }
