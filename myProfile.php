@@ -114,20 +114,17 @@
       				<div class="form-group">
       					<input type="password" name="confirmPassword" placeholder="Повторите пароль" class='profileInput'>
       				</div>
-      				<button type="submit" class="btn btn-primary" name="doGo" id='SaveChanges'>СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
-				      <p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
+      				<button type="submit" class="btn btn-primary" name="doGo" id='btnSaveChanges'>СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
 			     </form>
         	</div>
         </div>
+        <p id='kids'>ДЕТИ</p>
         <div class="childrenContainer">
-        	<p>ДЕТИ</p>
-        	<img src="" alt="">
+        	<img class='kidsProf' src="css/bogdan.jpg" alt=".">
         	<div class="allInformation">
-       			<p></p> 		
+       			<p class='kidDescrip'>Никита Александрович Симонов <br> Школа №120 <br> 9 класс</p> 		
         	</div>
-        	<button>
-        		
-        	</button>
+        	<button class='btnSelectKids'>ВЫБРАНО</button>
         </div>
       </div> 
  </body>
