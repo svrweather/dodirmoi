@@ -50,7 +50,7 @@ require_once '../functions/connect.php'
           <div class="navigation" id="admin_navigation">
           
             <ul class="nav" id ="admin_nav">
-                  <li><a href="/admin/admin.php">Статистика</a></li>
+                  <li><a class = "bold" href="/admin/admin.php">Статистика</a></li>
                   <li><a href="/request.php">Заявки</a></li>
                   <li><a href="../authorized.php">Выйти</a></li>
               </ul>
