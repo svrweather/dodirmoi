@@ -215,11 +215,11 @@ main {
 
 .sideContent {
 	width: 847px;
-	height: 680px;
 	background-color: #ffffff;
 	border-radius: 30px;
 	margin-left: 30px;
 	margin-top: 33px;
+	padding-bottom: 20px;
 }
 .sideContent-text {
 	width: 847px;
@@ -412,11 +412,62 @@ article a {
 	max-width: 90%;
 	all: unset;
 	color: #520FAD;
-	margin-left: 14%;
+	margin-left: 4%;
 	margin-top: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
 }
 #profPhoto {
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
+}
+#btnSaveChanges {
+	max-width: 100%;
+	border-radius: 20px;
+}
+#kids {
+	color: #520FAD;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.kidsProf {
+	height: 110px;
+	width: 110px;
+	border-radius: 100px;
+	margin-left: 30px;
+}
+.childrenContainer {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.btnSelectKids {
+	max-width: 30%;
+	border-radius: 20px;
+	text-align: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+}
+.kidDescrip {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	color: #520FAD;
 }
