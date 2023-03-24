@@ -24,7 +24,7 @@
   />  
   <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<title>Document</title>
+ 	<title>Мойдодыр</title>
  </head>
  <body>
   <div class="container">

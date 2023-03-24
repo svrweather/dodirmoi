@@ -28,7 +28,7 @@ require_once '../functions/connect.php'
   referrerpolicy="no-referrer"
   />  
   <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <title>Document</title>
+    <title>Мойдодыр</title>
 </head>
 <body>
     <div class="container">
@@ -46,86 +46,97 @@ require_once '../functions/connect.php'
             <img src="../css/admin-logo.jpg" alt=")))">
           </div>
         </header>
-        <div class="selector">
-          <form action="" method="GET">
-            <select name='class'>
-              <option value="11">11 класс</option>
-              <option value="10">10 класс</option>
-              <option value="9">9 класс</option>
-              <option value="8">8 класс</option>
-              <option value="7">7 класс</option>
-              <option value="6">6 класс</option>
-              <option value="5">5 класс</option>
-              <option value="4">4 класс</option>
-              <option value="3">3 класс</option>
-              <option value="2">2 класс</option>
-              <option value="1">1 класс</option>
-            </select>
-            <button type="submit" class="admin_input" style="padding-left: 10px; padding-right: 10px;">отфильтровать</button>
-          </form>
-        </div>
-        <table class="table">
-            <tbody>
-            <tr>
-                <th>id</th>
-                <th>ФИО</th>
-                <th>Класс</th>
-                <th>Дата</th>
-                <th>Коэффицент</th>
-                <th>Прошедшее время</th>
-            </tr>
-            <?php
-            var_dump($_GET['class']);
-            switch ($_GET['class']) {
-              case '11':
-                $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%11%"');
-                break;
-              case '10':
-                $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%"');
-                break;
-              case '9':
-                echo "ya eblan";
-                break; 
-              case '8':
-                echo "ya eblan";
-                break;
-              case '7':
-                echo "ya eblan";
-                break;
-              case '6':
-                echo "ya eblan";
-                break;
-              case '5':
-                echo "ya eblan";
-                break;
-              case '4':
-                echo "ya eblan";
-                break;
-              case '3':
-                echo "ya eblan";
-                break;
-              case '2':
-                echo "ya eblan";
-                break;
-              case '1':
-                echo "ya eblan";
-                break;             
-              default:
-                $result = mysqli_query($connect, 'SELECT * FROM `school`');
-                break;
-            }
-            while ($row = mysqli_fetch_array($result)) { // выводим данные
-                echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["name"] . "
-                 </td>" . "\n" . "<td>" . "" . $row["class"] . "</td>" . "\n" . "<td>" . "" . $row
-                    ["datetime"] . "</td>" . "\n" . "<td>" . "" . $row["coefficent"] . "</td>" . "\n" . "<td>" . "" . $row["timego"] . "</td>" . "\n" . "</tr>" . "\n";
-            }
+        <div class="mainPartContainer">
+          <div class="navigation" id="admin_navigation">
+          
+            <ul class="nav" id ="admin_nav">
+                  <li><a href="/admin/admin.php">Статистика</a></li>
+                  <li><a href="/request.php">Заявки</a></li>
+                  <li><a href="../authorized.php">Выйти</a></li>
+              </ul>
+            </div>
+            <div class="sideContent">
+              <div class="selector">
+                <form action="" method="GET">
+                  <select name='class'>
+                    <option value="11">11 класс</option>
+                    <option value="10">10 класс</option>
+                    <option value="9">9 класс</option>
+                    <option value="8">8 класс</option>
+                    <option value="7">7 класс</option>
+                    <option value="6">6 класс</option>
+                    <option value="5">5 класс</option>
+                    <option value="4">4 класс</option>
+                    <option value="3">3 класс</option>
+                    <option value="2">2 класс</option>
+                    <option value="1">1 класс</option>
+                  </select>
+                  <button type="submit" class="admin_input" style="padding-left: 10px; padding-right: 10px;">отфильтровать</button>
+                </form>
+              </div>
+              <table class="table">
+                  <tbody>
+                  <tr>
+                      <th>id</th>
+                      <th>ФИО</th>
+                      <th>Класс</th>
+                      <th>Дата</th>
+                      <th>Коэффицент</th>
+                      <th>Прошедшее время</th>
+                  </tr>
+                  <?php
+                  switch ($_GET['class']) {
+                    case '11':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%11%"');
+                      break;
+                    case '10':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%"');
+                      break;
+                    case '9':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%9%"');
+                      break; 
+                    case '8':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%8%"');
+                      break;
+                    case '7':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%7%"');
+                      break;
+                    case '6':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%6%"');
+                      break;
+                    case '5':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%5%"');
+                      break;
+                    case '4':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%4%"');
+                      break;
+                    case '3':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%3%"');
+                      break;
+                    case '2':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%2%"');
+                      break;
+                    case '1':
+                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%1%"');
+                      break;             
+                    default:
+                      $result = mysqli_query($connect, 'SELECT * FROM `school`');
+                      break;
+                  }
+                  while ($row = mysqli_fetch_array($result)) { // выводим данные
+                      echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["name"] . "
+                       </td>" . "\n" . "<td>" . "" . $row["class"] . "</td>" . "\n" . "<td>" . "" . $row
+                          ["datetime"] . "</td>" . "\n" . "<td>" . "" . $row["coefficent"] . "</td>" . "\n" . "<td>" . "" . $row["timego"] . "</td>" . "\n" . "</tr>" . "\n";
+                  }
 
-            ?>
-            </tbody>
-        </table>
-         <div class="div">
-              <a style="margin-left: 5%" href="../authorized.php">выйти</a>
+                  ?>
+                  </tbody>
+              </table>
+               <div class="div">
+                    <a style="margin-left: 5%" href="../authorized.php">выйти</a>
+              </div>
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>

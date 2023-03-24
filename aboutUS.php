@@ -8,13 +8,14 @@
  <html lang="en">
  <head>
  	<meta charset="UTF-8">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
  	<link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/diagrams.css">
+  <link rel="stylesheet" href="css/diagrams.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--     <link rel="stylesheet" href="css/jquery.circliful.css">-->
      <link href="css/main.css" rel="stylesheet" type="text/css" />
 
@@ -27,7 +28,7 @@
   />  
   <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<title>Document</title>
+ 	<title>Мойдодыр</title>
  </head>
  <body>
   <div class="container">
@@ -58,7 +59,7 @@
         <div class="sideContent-about">
         	<div class="top-content">
         		<h1>Наша команда</h1>
-        		<p align="center">Мы - команда школьников и студентов,
+        		<p align="center">Мы - команда школьников,
 				каждый из нас имеет достижения в своей области.
 				Мы готовы бороться с неправильным мытьём рук !</p>
         	</div>
@@ -67,17 +68,17 @@
 	            <article><div class="artContainer">
 	              <img src="css/user.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
 	              <h1>Никита Сентяков</h1>
-	              <p>Генеральный директор, Team Leader</p>
+	              <p>Team Leader, AI, Python</p>
 	            </div></article>
 	            <article><div class="artContainer">
 	              <img src="css/damir.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
 	              <h1>Дамир Рахматуллин</h1>
-	              <p>Web-Разработчик</p>
+	              <p>Full-stack Разработчик</p>
 	            </div></article>
 	            <article><div class="artContainer">
 	              <img src="css/roma.jpg" alt="" style="width: 220px; height: 220px;border-radius: 30px; align-content: center; margin-right: auto; margin-left: auto; display: block;">
 	              <h1>Роман Лашкарев</h1>
-	              <p>Web-Разработчик</p>
+	              <p>Front-end Разработчик, Базы данных</p>
 	            </div></article>
 
 	        </div>

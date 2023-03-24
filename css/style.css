@@ -392,3 +392,12 @@ article a {
 .rightSideContainer {
 	flex: 1;
 }
+#admin_nav {
+	justify-content: unset;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#admin_navigation {
+	height: 150px;
+}

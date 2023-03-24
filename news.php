@@ -24,7 +24,7 @@
   />  
   <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Мойдодыр</title>
  </head>
  <body>
   <div class="container">
@@ -55,7 +55,7 @@
               <article><div class="artContainer">
                 <img src="css/first_news.jpg" alt="" style="width: 360px; height: 150px;border-radius: 30px;">
                 <h1>MVP!!!</h1>
-                <p>Минимальный жизнеспособный продукт уже готов и работает в МБОУ СОШ №12, он включает в себя две камеры и пк</p>
+                <p>Минимальный жизнеспособный продукт уже готов и работает в МБОУ СОШ №12, он включает в себя две камеры и комьютер!</p>
               </div></article>
              <article><div class="artContainer">
                 <img src="css/second_news.jpg" alt="" style="width: 360px; height: 150px;border-radius: 30px;">
@@ -67,7 +67,13 @@
                 <h1>Совершенствуемся!</h1>
                 <p>Мы уже обучаем первую версию нейронной сети на 4-х тысячах изображений!</p>
               </div></article>
-              <article><div class="artContainer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum dignissimos deleniti, aperiam odio eos officia tempora inventore alias voluptatem. Vel consectetur commodi ut molestiae fugit ullam labore veniam quam.</div></article>
+              <article>
+                <div class="artContainer">
+                   <img src="css/third_news.jpg" alt="" style="width: 360px; height: 150px;border-radius: 30px;">
+                  <h1>Разработана мобильная версия сайта!</h1>
+                  <p> Добавлено удобное отображение контента сайта на мобильных устройствах.</p> 
+                </div>
+              </article>
           </div>
         </div>
             
