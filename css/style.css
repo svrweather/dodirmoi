@@ -13,6 +13,10 @@ h2, .edit {
 	text-align: center;
 }
 
+.profileInput {
+	border-radius: 20px;
+}
+
 button {
 	all: unset;
 	border-radius: 50px;

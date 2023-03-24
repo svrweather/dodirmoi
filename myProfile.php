@@ -44,10 +44,10 @@
                 </div>
                 <div class="modal-body">    
                 <ul>
-			            <li><a href="/myProfile.php">Мой профиль</a></li>
+			        <li class="bold"><a href="/myProfile.php">Мой профиль</a></li>
               <li><a href="/howItWorks.php">Как это работает?</a></li>
               <li><a href="/aboutUS.php">О нас</a></li>
-              <li class="bold"><a href="/myStatistic.php">Статистика</a></li>
+              <li><a href="/myStatistic.php">Статистика</a></li>
               <li><a href="/news.php">Новости</a></li>
               <li><a href="/admin/admin.php">Админ-панель</a></li>
 		            </ul>
@@ -97,23 +97,23 @@
         <div class="profileContainer">
         	<div class="leftSideContainer">
         		<img src="" alt="">
-        		<button></button>
+        		<button id='profBtn'></button>
         	</div>
         	<div class="rightSideContainer">
         		<form action="functions/editProfile.php" method="POST" class="edit">
       				<div class="form-group">
-      					<input type="text" name="login" placeholder="ФИО">
+      					<input type="text" name="login" placeholder="ФИО" class='profileInput'>
       				</div>
       				<div class="form-group">
-      					<input type="email" name="email" placeholder="Email">
+      					<input type="email" name="email" placeholder="Email" class='profileInput'>
       				</div>
       				<div class="form-group">
-      					<input type="password" name="password" placeholder="Пароль">
+      					<input type="password" name="password" placeholder="Пароль" class='profileInput'>
       				</div>
       				<div class="form-group">
-      					<input type="password" name="confirmPassword" placeholder="Повторите пароль">
+      					<input type="password" name="confirmPassword" placeholder="Повторите пароль" class='profileInput'>
       				</div>
-      				<button type="submit" class="btn btn-primary" name="doGo">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+      				<button type="submit" class="btn btn-primary" name="doGo" id='profile5'>СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
 				      <p id="indexButton"><a href="index.php" >Уже есть аккаунт? Войти</a></p>
 			     </form>
         	</div>
