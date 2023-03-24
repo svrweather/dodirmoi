@@ -68,19 +68,20 @@ require_once '../functions/connect.php'
             <tbody>
             <tr>
                 <th>id</th>
-                <th>id_pupil</th>
-                <th>data_time</th>
-                <th>percent</th>
-                <th>wash_time</th>
+                <th>ФИО</th>
+                <th>Класс</th>
+                <th>Дата</th>
+                <th>Коэффицент</th>
+                <th>Прошедшее время</th>
             </tr>
             <?php
             var_dump($_GET['class']);
             switch ($_GET['class']) {
               case '11':
-                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%11%"');
                 break;
               case '10':
-                echo "ya eblan";
+                $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%"');
                 break;
               case '9':
                 echo "ya eblan";
@@ -110,14 +111,13 @@ require_once '../functions/connect.php'
                 echo "ya eblan";
                 break;             
               default:
-                $result = mysqli_query($connect, 'SELECT * FROM `main`');
+                $result = mysqli_query($connect, 'SELECT * FROM `school`');
                 break;
             }
             while ($row = mysqli_fetch_array($result)) { // выводим данные
-                echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["id_pupil"] . "
-                 </td>" . "\n" . "<td>" . "" . $row["data_time"] . "</td>" . "\n" . "<td>" . "" . $row
-                    ["percent"] . "</td>" . "\n" . "<td>" . "" . $row["wash_time"] . "</td>" . "\n" . "</tr>" . "\n";
-
+                echo "<tr>\n<td>" . $row["id"] . "</td>" . "\n" . "<td>" . "" . $row["name"] . "
+                 </td>" . "\n" . "<td>" . "" . $row["class"] . "</td>" . "\n" . "<td>" . "" . $row
+                    ["datetime"] . "</td>" . "\n" . "<td>" . "" . $row["coefficent"] . "</td>" . "\n" . "<td>" . "" . $row["timego"] . "</td>" . "\n" . "</tr>" . "\n";
             }
 
             ?>
