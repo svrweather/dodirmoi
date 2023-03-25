@@ -26,9 +26,17 @@
 
 
 
+
 @media screen and (min-width: 100px) and (max-width: 650px) {
     body {
         overflow: scroll;
+        position: relative
+    }
+    .mainPartContainer {
+    max-width: 650px;
+    }
+    html, body {
+        overflow-x: hidden;
       }
     .diagramContent p {
         font-size: 32px !important;
@@ -57,6 +65,11 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    .peopleGrid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10%;
+    }
+
     #p1{
         position: absolute;
         top:55%;
@@ -167,7 +180,7 @@
         position: relative !important;
     }
     .userName {
-        opacity: 0;
+        display: none;
     }
     .menu {
         opacity: 1;
@@ -198,9 +211,12 @@
     }
     .form-group {
         display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .edit {
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -219,6 +235,77 @@
     }
     .choice {
         font-size: 33px;
+    }
+    #ProfHeader {
+        background-color: white;
+        height: 150px !important;
+        border-radius: 0px 0px 30px 30px !important;
+
+    }
+    #PrPicProf {
+        opacity: 1;
+        display: block;
+        right: unset;
+    }
+    #imgProf {
+        height: 60px;
+        width: 60px;
+        margin-top: 50px;
+        margin-left: 20px;
+        left: 20px;
+    }
+    #kidPhoto, #logoPict, #ProfTitle {
+        display: none;
+    }
+    #MyRf {
+        display: block !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 19px;
+        text-align: center;
+        color: #520FAD;
+        position: absolute;
+        margin-left: 30% !important;
+        margin-bottom: 65px;
+    }
+    #profP {
+        display: block !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #520FAD;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+    .leftSideContainer {
+        display: none;
+    }
+    .rightSideContainer {
+        max-width: 100% !important;
+        right: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #btnSaveChanges {
+        max-width: 90% !important;
+        font-size: 20px;
+    }
+    #kids {
+        text-align: unset !important;
+        margin-left: 20px;
+        font-size: 24px !important;
+        margin-top: unset !important;
+    }
+    .btnSelectKids {
+        display: none;
+    }
+    .kidDescrip {
+        margin-left: 20px;
+        font-size: 16px !important;
     }
 }
 
