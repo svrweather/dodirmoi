@@ -44,9 +44,9 @@
                 </div>
                 <div class="modal-body">    
                 <ul>
-			        <li class="bold"><a href="/myProfile.php">Мой профиль</a></li>
+			        <li><a href="/myProfile.php">Мой профиль</a></li>
               <li><a href="/howItWorks.php">Как это работает?</a></li>
-              <li><a href="/aboutUS.php">О нас</a></li>
+              <li class="bold"><a href="/aboutUS.php">О нас</a></li>
               <li><a href="/myStatistic.php">Статистика</a></li>
               <li><a href="/news.php">Новости</a></li>
               <li><a href="/admin/admin.php">Админ-панель</a></li>
