@@ -42,7 +42,7 @@
       <div class="userName">
       </div>
       <div class="profile_pic">
-        <img src="css/user.jpg" alt=")))">
+        <img src="css/mother.png" alt=")))">
       </div>
     </header>
       <div class="mainPartContainer">

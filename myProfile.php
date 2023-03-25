@@ -1,8 +1,14 @@
 <?php 
  session_start();
+ require_once 'functions/connect.php';
  if(!$_SESSION['user']){
 		header('Location: ../index.php');
 	}
+  $childrens = mysqli_fetch_array(mysqli_query($connect, "SELECT * FROM `school`"));
+  $parent = mysqli_fetch_array(mysqli_query($connect, "SELECT * FROM `users` WHERE id = '" . $_SESSION['user']['id'] ."'"));
+  // while ($row = mysqli_fetch_array($parent)) { // выводим данные
+  //                     echo $row['login'];
+  //                 }
  ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -70,10 +76,10 @@
         <img src="css/logo.png" alt="(((" id='logoPict'>
       </div>
       <div class="userName">
-        Никитa Сентяков
+       <?php echo $childrens['name']; ?>
       </div>
       <div class="profile_pic">
-        <img src="css/user.jpg" alt=")))">
+        <img src="css/mother.png" alt=")))">
       </div>
     </header>
       <div class="mainPartContainer">
@@ -96,12 +102,12 @@
       <div class="sideContent">
         <div class="profileContainer">
         	<div class="leftSideContainer">
-        		<img src="css/roma.jpg" alt="roma" id='profPhoto'>
+        		<img src="css/mother.png" alt="moma" id='profPhoto'>
         		<button id='profBtn'>ИЗМЕНИТЬ ФОТО</button>
         	</div>
 
         	<div class="rightSideContainer">
-        		<form action="functions/editProfile.php" method="POST" class="edit">
+        		<form action="" method="POST" class="edit">
       				<div class="form-group">
       					<input type="text" name="login" placeholder="ФИО" class='profileInput'>
       				</div>
@@ -120,9 +126,9 @@
         </div>
         <p id='kids'>ДЕТИ</p>
         <div class="childrenContainer">
-        	<img class='kidsProf' src="css/bogdan.jpg" alt=".">
+        	<img class='kidsProf' src="css/user.jpg" alt=".">
         	<div class="allInformation">
-       			<p class='kidDescrip'>Никита Александрович Симонов <br> Школа №120 <br> 9 класс</p> 		
+       			<p class='kidDescrip'><?php echo $childrens['name']; ?> <br> Школа №12 <br> <?php echo $childrens['class']; ?></p> 		
         	</div>
         	<button class='btnSelectKids'>ВЫБРАНО</button>
         </div>

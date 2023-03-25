@@ -1,6 +1,7 @@
 <?php
-require_once '../functions/connect.php'
+require_once '../functions/connect.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,40 +88,40 @@ require_once '../functions/connect.php'
                   <?php
                   switch ($_GET['class']) {
                     case '11':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%11%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%11%"');
                       break;
                     case '10':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%10%" AND class LIKE "_0%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%10%" AND class LIKE "_0%"');
                       break;
                     case '9':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%9%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%9%"');
                       break; 
                     case '8':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%8%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%8%"');
                       break;
                     case '7':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%7%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%7%"');
                       break;
                     case '6':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%6%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%6%"');
                       break;
                     case '5':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%5%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%5%"');
                       break;
                     case '4':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%4%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%4%"');
                       break;
                     case '3':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%3%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%3%"');
                       break;
                     case '2':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%2%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%2%"');
                       break;
                     case '1':
-                      $result = mysqli_query($connect, 'SELECT * FROM `school` WHERE class LIKE "%1%" AND NOT class LIKE "_0%"');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens` WHERE class LIKE "%1%" AND NOT class LIKE "_0%"');
                       break;             
                     default:
-                      $result = mysqli_query($connect, 'SELECT * FROM `school`');
+                      $result = mysqli_query($connect, 'SELECT * FROM `childrens`');
                       break;
                   }
                   while ($row = mysqli_fetch_array($result)) { // выводим данные

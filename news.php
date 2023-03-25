@@ -36,7 +36,7 @@
         <img src="css/logo.png" alt="(((">
       </div>
       <div class="profile_pic">
-        <img src="css/user.jpg" alt=")))">
+        <img src="css/mother.png" alt=")))">
       </div>
     </header>
     <div class="mainPartContainer">
@@ -69,7 +69,7 @@
               </div></article>
               <article>
                 <div class="artContainer">
-                   <img src="css/third_news.jpg" alt="" style="width: 360px; height: 150px;border-radius: 30px;">
+                   <img src="css/phone.png" alt="" style="width: 360px; height: 150px;border-radius: 30px;">
                   <h1>Разработана мобильная версия сайта!</h1>
                   <p> Добавлено удобное отображение контента сайта на мобильных устройствах.</p> 
                 </div>

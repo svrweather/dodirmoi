@@ -1,8 +1,15 @@
 <?php 
  session_start();
+ require_once 'functions/connect.php';
  if(!$_SESSION['user']){
-		header('Location: ../index.php');
-	}
+    header('Location: ../index.php');
+  }
+  $childrens = mysqli_query($connect, "SELECT * FROM `school`");
+  $parent = mysqli_fetch_array(mysqli_query($connect, "SELECT * FROM `users` WHERE id = '" . $_SESSION['user']['id'] ."'"));
+  // while ($row = mysqli_fetch_array($parent)) { // выводим данные
+  //                     echo $row['login'];
+  //                 }
+  $row = mysqli_fetch_array($childrens, MYSQLI_ASSOC);
  ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -37,7 +44,7 @@
         <img src="css/logo.png" alt="(((">
       </div>
       <div class="profile_pic" id="prof_pic_aut">
-        <img src="css/images.jpeg" alt=")))">
+        <img src="css/mother.png" alt=")))">
       </div>
     </header>
     <main>
@@ -47,12 +54,12 @@
             <a href="myStatistic.php">
               <img src="css/user.jpg" alt="children">
               <p class="children_name">
-                Никита <br> Сентяков
+                <?php 
+                echo $row['name'];
+                ?>
               </p>
             </a>
         </div>
-       
-      
     </main>
 
       <a href="../auth/logout.php">Выйти</a>
