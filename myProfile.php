@@ -40,7 +40,7 @@
  </head>
  <body>
   <div class="container">
-    <header>
+    <header id='ProfHeader'>
       <div id="openModal" class="modal">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -69,18 +69,33 @@
           <a href="#openModal"><span id='span3'></span></a>
         </div>
        
-      </div>
-        <h1 class="content-header_title">мойдодыр</h1>
+      </div >
+        <h1 class="content-header_title" id='ProfTitle'>мойдодыр</h1>
       </div>
       <div class="logo">
         <img src="css/logo.png" alt="(((" id='logoPict'>
       </div>
+<<<<<<< HEAD
       <div class="userName">
        <?php echo $childrens['name']; ?>
       </div>
       <div class="profile_pic">
         <img src="css/mother.png" alt=")))">
+=======
+      <div>
+        <img src="css/damir.jpg" alt="." id='kidPhoto'>
       </div>
+      <div id='MyRf'>
+        Мой профиль
+      </div>
+      <div class="userName" id='UNProf'>
+        Никитa Сентяков
+      </div>
+      <div class="profile_pic" id='PrPicProf'>
+        <img src="css/user.jpg" alt=")))" id='imgProf'>
+>>>>>>> 814e2ad31133803f7d86b944d079eab57cb79b22
+      </div>
+      <p id='profP'>Симонова Мария <br> Владиславовна</p>
     </header>
       <div class="mainPartContainer">
         <div class="navigation">
@@ -124,7 +139,7 @@
 			     </form>
         	</div>
         </div>
-        <p id='kids'>ДЕТИ</p>
+        <p id='kids'>Дети</p>
         <div class="childrenContainer">
         	<img class='kidsProf' src="css/user.jpg" alt=".">
         	<div class="allInformation">

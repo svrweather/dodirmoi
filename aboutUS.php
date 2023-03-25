@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
  	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/diagrams.css">
+  <link rel="stylesheet" href="css/media1.css">
+  <link rel="stylesheet" href="css/vpopup.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -33,6 +35,34 @@
  <body>
   <div class="container">
     <header>
+    <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Выберите страницу</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">    
+                <ul>
+			        <li><a href="/myProfile.php">Мой профиль</a></li>
+              <li><a href="/howItWorks.php">Как это работает?</a></li>
+              <li class="bold"><a href="/aboutUS.php">О нас</a></li>
+              <li><a href="/myStatistic.php">Статистика</a></li>
+              <li><a href="/news.php">Новости</a></li>
+              <li><a href="/admin/admin.php">Админ-панель</a></li>
+		            </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      <div class='menu'>
+        <div class='lines'>
+          <a href="#openModal"><span id='span1'></span></a>
+          <a href="#openModal"><span id='span2'></span></a>
+          <a href="#openModal"><span id='span3'></span></a>
+        </div>
+      </div>
       <div>
         <h1 class="content-header_title">мойдодыр</h1>
       </div>
@@ -56,7 +86,7 @@
               <li><a href="/admin/admin.php">Админ-панель</a></li>
           </ul>
         </div>
-        <div class="sideContent-about">
+        <div class="sideContent">
         	<div class="top-content">
         		<h1>Наша команда</h1>
         		<p align="center">Мы - команда школьников,
